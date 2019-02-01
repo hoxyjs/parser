@@ -7,6 +7,7 @@ My boilerplate for typical typescript app run on node.
 - [x] jest
 - [x] prettier
 - [x] tslint
+- [x] eslint
 - [x] webpack
 - [x] husky
 - [x] forever
