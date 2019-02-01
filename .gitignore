@@ -5,3 +5,4 @@ docs
 dist
 build
 coverage
+yarn-error.log
