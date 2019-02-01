@@ -1,4 +1,4 @@
-import Hello from "../index";
+import Hello from "../Hello";
 
 describe("Class Hello", () => {
   const hello = new Hello();

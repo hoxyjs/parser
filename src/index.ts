@@ -1,7 +1,4 @@
-export default class Hello {
-  private _msg: string = "Hello world";
+import Hello from "./Hello";
 
-  get msg(): string {
-    return this._msg;
-  }
-}
+const hello = new Hello();
+const msg: string = hello.msg;
