@@ -1,0 +1,12 @@
+{
+    "defaultSeverity": "warning",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        // override your rules here. For example:
+        // "no-console": false,
+    },
+    "rulesDirectory": []
+}
