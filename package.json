@@ -12,7 +12,7 @@
     "lint:config": "eslint --fix ./*.js",
     "prettier": "prettier --write 'src/**/*{.ts,.tsx}'",
     "tslint": "tslint --fix -c ./tslint.json 'src/**/*{.ts,.tsx}'",
-    "webpack:watch": "webpack --wateslint .ch",
+    "webpack:watch": "webpack --watch",
     "forever": "forever --watch dist/bundle.js"
   },
   "license": "MIT",
