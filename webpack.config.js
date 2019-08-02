@@ -4,6 +4,13 @@ module.exports = {
   entry: './src/index.ts',
   devtool: 'inline-source-map',
   mode: 'development',
+  // the webpack config just works
+  // SEE https://github.com/webpack/webpack/issues/1599
+  target: 'node',
+  node: {
+    __dirname: false,
+    __filename: false,
+  },
   module: {
     rules: [
       {
