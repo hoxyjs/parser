@@ -21,7 +21,10 @@
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/register": "^7.5.5",
+    "@types/dotenv": "^6.1.1",
+    "@types/exceljs": "^0.5.3",
     "@types/jest": "^24.0.15",
+    "dotenv": "^8.0.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-plugin-import": "^2.18.2",
@@ -39,5 +42,8 @@
     "typescript": "^3.5.3",
     "webpack": "^4.38.0",
     "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "exceljs": "^1.14.0"
   }
 }
