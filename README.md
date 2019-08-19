@@ -1,13 +1,10 @@
 # Parser
-https://intraweb.hku.hk/reserved_1/sis_student/sis/SIS-class-timetable.html => download exel => parse => use it
+1. https://intraweb.hku.hk/reserved_1/sis_student/sis/SIS-class-timetable.html 
+2. download excel 
+3. parse 
+4. store it in mongodb
 
 ## Stacks
 - ts & node
-- MongoDB & Mongoose
-- Docker
-
-## Implementation
-1. Put data from the excel file into MongoDB on AWS 
-    - How do I test it
-    - With docker?
-2. AWS
+- mongoDB & mongoose
+- docker & docker-compose
