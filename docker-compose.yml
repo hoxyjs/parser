@@ -1,20 +1,27 @@
 version: "3"
 services:
-  nodejs:
+  # my custom service name
+  node:
     build:
       context: .
       dockerfile: Dockerfile
-    image: nodejs
-      container_name: nodejs
+    image: 9oel/node-test
     restart: unless-stopped
     ports:
-    — "8080:8080"
+      - "8080:8080"
+    # for volume errors, refer to https://github.com/ClusterHQ/dvol/issues/67
     volumes:
       - .:/home/node/app
-      - node_modules:/home/node/app/node_modules
+      - ./node_modules:/home/node/app/node_modules
+    environment:
+      - DOCKER_ROOT_DIR=/home/node/app
     depends_on:
-    — mongo
+      - mongo
   mongo:
-      image: mongo
-      ports:
-      — "27017:27017"
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+    volumes:
+      - ./data/db:/data/db

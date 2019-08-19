@@ -8,8 +8,8 @@ COPY package*.json ./
 # Ensure the current user is 'node'
 USER node
 # Install deps
-RUN npm install -g yarn
-RUN yarn
+RUN npm install --save-dev yarn
+RUN /home/node/app/node_modules/.bin/yarn
 # Copy app source code with appropriate permissions
 COPY --chown=node:node . .
 # Start application

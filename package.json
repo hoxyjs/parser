@@ -46,6 +46,7 @@
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {
+    "await-to-js": "^2.1.1",
     "exceljs": "^1.14.0",
     "mongoose": "^5.6.8"
   }

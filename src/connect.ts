@@ -1,10 +1,10 @@
-import mongoose from "mongoose"
-import Course from "./course"
+import mongoose from "mongoose";
+import Course from "./course";
 
 // course will be the name of our cluster
-const CONNECTION = "mongodb://localhost:27017/course"
+// it's not 'localhost'. It's 'mongo'.
+const CONNECTION = "mongodb://mongo:27017/course";
 const connect = () =>
-    mongoose.connect(CONNECTION)
-        .catch(error => { throw new Error(error) });
+    mongoose.connect(CONNECTION, { useNewUrlParser: true });
 
-export default connect
+export default connect;
